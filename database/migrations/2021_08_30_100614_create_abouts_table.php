@@ -16,7 +16,7 @@ class CreateAboutsTable extends Migration
         Schema::create('abouts', function (Blueprint $table) {
             $table->id();
             $table->string('h3');
-            $table->string('p2');
+            $table->text('p2');
             $table->string('img');
             $table->string('ul1_li1_strong');
             $table->string('ul1_li1');
@@ -35,7 +35,7 @@ class CreateAboutsTable extends Migration
             $table->string('ul2_li3');
             $table->string('ul2_li4_strong');
             $table->string('ul2_li4');
-            $table->string('p3');
+            $table->text('p3');
 
             $table->timestamps();
         });

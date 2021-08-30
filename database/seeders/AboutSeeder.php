@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-
+use Illuminate\Support\Facades\DB;
 class AboutSeeder extends Seeder
 {
     /**
@@ -13,7 +13,7 @@ class AboutSeeder extends Seeder
      */
     public function run()
     {
- DB::table('titres')->insert([
+ DB::table('abouts')->insert([
             ["h3"=>"UI/UX Designer &amp; Web Developer.",
             "p2"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.",

@@ -24,6 +24,7 @@ class CreateContactsTable extends Migration
             $table->string("lbl_name1");
             $table->string("lbl_name2");
             $table->string("lbl_name3");
+            $table->string("lbl_name4");
             $table->string("div_loading");
             $table->string("div_msg");
             $table->string("btn");
