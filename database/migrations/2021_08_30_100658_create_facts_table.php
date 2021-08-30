@@ -15,6 +15,8 @@ class CreateFactsTable extends Migration
     {
         Schema::create('facts', function (Blueprint $table) {
             $table->id();
+            $table->string("titre_h2");
+            $table->string("p_description");
             $table->string("span1");
             $table->string("span2");
             $table->string("span3");

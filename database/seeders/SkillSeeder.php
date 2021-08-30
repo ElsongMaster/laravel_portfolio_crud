@@ -15,7 +15,10 @@ class SkillSeeder extends Seeder
     {
          DB::table('skills')->insert([
              [
-                 "skill1"=>"HTML",
+                
+"titre_h2"=>"Skills",
+                "p_description"=>"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.",
+                "skill1"=>"HTML",
                  "val1"=>"100",
                  "valBar1"=>"100",
                  "skill2"=>"CSS",

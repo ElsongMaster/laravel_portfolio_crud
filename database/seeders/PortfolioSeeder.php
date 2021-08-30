@@ -16,6 +16,8 @@ class PortfolioSeeder extends Seeder
     
         DB::table('portfolios')->insert([ 
             [
+"titre_h2"=>"Portfolio",
+                "p_description"=>"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.",
                 "ul_li1"=>"All",
                 "ul_li2"=>"App",
                 "ul_li3"=>"Card",

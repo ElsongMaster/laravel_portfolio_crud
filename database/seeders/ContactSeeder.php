@@ -14,7 +14,10 @@ class ContactSeeder extends Seeder
     public function run()
     {
          DB::table('contacts')->insert([   
-        ["info_h4"=>"Location",
+        [
+            "titre_h2"=>"Contact",
+                "p_description"=>"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.",
+            "info_h4"=>"Location",
             "info_p"=>"A108 Adam Street, New York, NY 535022",
         "email_h4"=>"Email",
             "email_p"=>"info@example.com",

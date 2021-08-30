@@ -14,7 +14,10 @@ class AboutSeeder extends Seeder
     public function run()
     {
  DB::table('abouts')->insert([
-            ["h3"=>"UI/UX Designer &amp; Web Developer.",
+            [   
+                "titre_h2"=>"About",
+                "p_description"=>"Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.",
+                "h3"=>"UI/UX Designer & Web Developer.",
             "p2"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.",
             "img"=>"profile-img.jpg",
