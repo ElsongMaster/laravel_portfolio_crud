@@ -6,8 +6,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>{{$data->titre_h2}}</h2>
-          <p>{{$data->p_description}}</p>
+          <h2>Facts</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row no-gutters">
@@ -16,7 +16,7 @@
             <div class="count-box">
               <i class="icofont-simple-smile"></i>
               <span data-toggle="counter-up">{{$data->span1}}</span>
-              <p><strong>{{$data->strong1}}</strong> {{$data->p1}}</p>
+              <p><strong>Happy Clients</strong> consequuntur quae</p>
             </div>
           </div>
 
@@ -24,7 +24,7 @@
             <div class="count-box">
               <i class="icofont-document-folder"></i>
               <span data-toggle="counter-up">{{$data->span2}}</span>
-              <p><strong>{{$data->strong2}}</strong>{{$data->p2}}</p>
+              <p><strong>Projects</strong>adipisci atque cum quia aut</p>
             </div>
           </div>
 
@@ -32,7 +32,7 @@
             <div class="count-box">
               <i class="icofont-live-support"></i>
               <span data-toggle="counter-up">{{$data->span3}}</span>
-              <p><strong>{{$data->strong3}}</strong> {{$data->p3}}</p>
+              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
             </div>
           </div>
 
@@ -40,7 +40,7 @@
             <div class="count-box">
               <i class="icofont-users-alt-5"></i>
               <span data-toggle="counter-up">{{$data->span4}}</span>
-              <p><strong>{{$data->strong4}}</strong> {{$data->p4}}</p>
+              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
             </div>
           </div>
 

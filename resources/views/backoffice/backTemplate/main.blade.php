@@ -36,10 +36,11 @@
 </head>
 
 <body>
-
-    @include('partials.header')
-    @yield('content')
-    @include('partials.footer')
+  @include('backoffice.backPartials.header')
+  <main id="main">
+    @yield('backContent')
+  </main>
+    @include('backoffice.backPartials.footer')
 
  <!-- Vendor JS Files -->
   <script src="{{asset('assets/vendor/jquery/jquery.min.js')}}"></script>

@@ -3,7 +3,7 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="{{asset('assets/img/profile-img.jpg')}}" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Alex Smith</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -16,12 +16,12 @@
 
       <nav class="nav-menu">
         <ul>
-          <li><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="{{route('home')}}"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li class="active"><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
           <li><a href="#services"><i class="bx bx-server"></i> Services</a></li>
           <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-          <li class=" mt-5  border-top border-secondary"><a href="#"><i class="fas fa-tools"></i> backoffice</a></li>
+          <li class=" mt-5  border-top border-secondary"><a href="{{route('backAbout')}}"><i class="fas fa-tools"></i> backoffice</a></li>
           
 
         </ul>

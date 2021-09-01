@@ -15,30 +15,19 @@ class CreateAboutsTable extends Migration
     {
         Schema::create('abouts', function (Blueprint $table) {
             $table->id();
-            $table->string("titre_h2");
-            $table->string("p_description");
-            $table->string('h3');
+ 
+            $table->string("h3");
             $table->text('p2');
             $table->string('img');
-            $table->string('ul1_li1_strong');
-            $table->string('ul1_li1');
-            $table->string('ul1_li2_strong');
-            $table->string('ul1_li2');
-            $table->string('ul1_li3_strong');
-            $table->string('ul1_li3');
-            $table->string('ul1_li4_strong');
-            $table->string('ul1_li4');
-
-            $table->string('ul2_li1_strong');
-            $table->string('ul2_li1');
-            $table->string('ul2_li2_strong');
-            $table->string('ul2_li2');
-            $table->string('ul2_li3_strong');
-            $table->string('ul2_li3');
-            $table->string('ul2_li4_strong');
-            $table->string('ul2_li4');
+            $table->string('birthday');
+            $table->string('website');
+            $table->string('phone');
+            $table->string('city');
+            $table->integer('age');
+            $table->string('degree');          
+            $table->string('email');           
+            $table->string('freelance');
             $table->text('p3');
-
             $table->timestamps();
         });
     }

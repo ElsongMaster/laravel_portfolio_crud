@@ -1,4 +1,9 @@
-    <!-- ======= About Section ======= -->
+
+@extends('backoffice.backTemplate.main')
+
+
+@section('backContent')
+   <!-- ======= About Section ======= -->
 
     @foreach ( $abouts as $data)
         
@@ -42,7 +47,11 @@
             </p>
           </div>
         </div>
-
+              <div class="container  d-flex justiify-content-center mt-5">
+  
+                <a href="{{route('showService',$data->id)}}" class="btn btn-info mx-auto py-2 px-5">SHOW</a>
+              </div>
       </div>
     </section><!-- End About Section -->
     @endforeach
+@endsection
