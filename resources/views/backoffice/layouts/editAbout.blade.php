@@ -61,6 +61,11 @@
         Freelance: <input type="text" value="{{$personne->freelance}}" class ="mt-1 mb-3"name="freelance">
     </div>
     
+    <div class=" d-flex flex-column w-100">
+
+        Présentation: <input type="text" value="{{$personne->p3}}" class ="mt-1 mb-3"name="freelance">
+    </div>
+    
     <button class="btn btn-warning text-light">Submit</button>
     </form>   
 </div> 

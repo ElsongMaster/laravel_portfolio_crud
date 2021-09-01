@@ -24,12 +24,14 @@ class backAboutController extends Controller
 
     public function update(About $id,Request $rq){
         request()->validate([
+            "h3"=>["required","min:1","max:100"],
             "birthday"=>["required","min:1","max:100"],
             "phone"=>["required"],
             "city"=>["required"],
             "age"=>["required","numeric"],
             "email"=>["required"],
             "freelance"=>["required"],
+            "p3"=>["required","min:1","max:400"],
 
     ]);
         $personne  = $id;
