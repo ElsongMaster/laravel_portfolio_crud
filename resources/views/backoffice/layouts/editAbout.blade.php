@@ -17,21 +17,49 @@
 
 <div class="container-fluid d-flex justify-content-center align-items-center mt-5">
 
-    <form action="{{route('updateContact',$personne->id)}}" method="post">
+    <form action="{{route('updateAbout',$personne->id)}}" method="post" class="w-50">
     @csrf
     @method('PUT')
-    
-    ImgLink: <input type="text" value="{{$personne->img}}" name="img">
-    Birthday: <input type="text" value="{{$personne->birthday}}" name="birthday">
-    Website: <input type="text" value="{{$personne->website}}" name="website">
-    Phone: <input type="text" value="{{$personne->phone}}" name="phone">
-    
-    City: <input type="text" value="{{$personne->city}}" name="city">
-    Age: <input type="text" value="{{$personne->age}}" name="age">
-    Degree: <input type="text" value="{{$personne->degree}}" name="degree">
-    
-    Email: <input type="text" value="{{$personne->email}}" name="email">
-    Freelance: <input type="text" value="{{$personne->freelance}}" name="freelance">
+    <div class=" d-flex flex-column w-100">
+
+        Métier: <input type="text" value="{{$personne->h3}}" name="metier" class="mt-1 mb-3">
+    </div>
+    <div class=" d-flex flex-column w-100">
+
+        ImgLink: <input type="text" value="{{$personne->img}}" name="img" class="mt-1 mb-3">
+    </div>
+    <div class=" d-flex flex-column w-100">
+
+        Birthday: <input type="text" value="{{$personne->birthday}}" class ="mt-1 mb-3"name="birthday">
+    </div>
+    <div class=" d-flex flex-column w-100">
+
+        Website: <input type="text" value="{{$personne->website}}" class ="mt-1 mb-3"name="website">
+    </div>
+    <div class=" d-flex flex-column w-100">
+
+        Phone: <input type="text" value="{{$personne->phone}}" class ="mt-1 mb-3"name="phone">
+    </div>
+    <div class=" d-flex flex-column w-100">
+
+        City: <input type="text" value="{{$personne->city}}" class ="mt-1 mb-3"name="city">
+    </div> 
+    <div class=" d-flex flex-column w-100">
+
+        Age: <input type="text" value="{{$personne->age}}" class ="mt-1 mb-3"name="age">
+    </div> 
+    <div class=" d-flex flex-column w-100">
+
+        Degree: <input type="text" value="{{$personne->degree}}" class ="mt-1 mb-3"name="degree">
+    </div>
+    <div class=" d-flex flex-column w-100">
+
+        Email: <input type="text" value="{{$personne->email}}" class ="mt-1 mb-3"name="email">
+    </div>
+    <div class=" d-flex flex-column w-100">
+
+        Freelance: <input type="text" value="{{$personne->freelance}}" class ="mt-1 mb-3"name="freelance">
+    </div>
     
     <button class="btn btn-warning text-light">Submit</button>
     </form>   

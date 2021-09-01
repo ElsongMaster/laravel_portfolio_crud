@@ -16,8 +16,8 @@ class CreateAboutsTable extends Migration
         Schema::create('abouts', function (Blueprint $table) {
             $table->id();
  
-            $table->string("h3");
-            $table->text('p2');
+            $table->string('h3')->nullable();
+            $table->text('p2')->nullable();
             $table->string('img');
             $table->string('birthday');
             $table->string('website')->nullable();
@@ -27,7 +27,7 @@ class CreateAboutsTable extends Migration
             $table->string('degree')->nullable();          
             $table->string('email');           
             $table->string('freelance');
-            $table->text('p3');
+            $table->text('p3')->nullable();
             $table->timestamps();
         });
     }

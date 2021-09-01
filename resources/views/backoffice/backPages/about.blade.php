@@ -49,7 +49,7 @@
         </div>
               <div class="container  d-flex justiify-content-center mt-5">
   
-                <a href="{{route('showService',$data->id)}}" class="btn btn-info mx-auto py-2 px-5">SHOW</a>
+                <a href="{{route('showAbout',$data->id)}}" class="btn btn-info mx-auto py-2 px-5">SHOW</a>
               </div>
       </div>
     </section><!-- End About Section -->
