@@ -37,8 +37,8 @@ class backContactController extends Controller
 
 
     public function destroy(Contact $id){
-        $id->delete;
-        return redirect()->back();
+        $id->delete();
+        return redirect(route('backContact'));
     }
     public function detroyAll(){
         Contact::truncate();

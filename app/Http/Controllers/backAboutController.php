@@ -59,7 +59,7 @@ class backAboutController extends Controller
 
     public function destroy(About $id){
         $id->delete();
-        return redirect()->back();
+        return redirect(route('backAbout'));
     }
 
 }
