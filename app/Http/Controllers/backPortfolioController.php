@@ -23,18 +23,19 @@ class backPortfolioController extends Controller
         return view('backoffice.layouts.editPortfolio',compact('project'));
     }
     public function update(Portfolio $id, Request $rq){
+        request()->validate([
+            "img"=>["required","min:1","max:200"],
+        ]);
         $project  = $id;
-        $project->info = $rq->info;
-        $project->email = $rq->email;
-        $project->phone_number = $rq->phone_number;
+        $project->img = $rq->img;
         $project->save();
-        return redirect(route('backPortfolio'));
+        return redirect(route('showPortfolio',$project->id));
     }
 
 
     public function destroy(Portfolio $id){
-        $id->delete;
-        return redirect()->back();
+        $id->delete();
+        return redirect(route('backPortfolio'));
     }
     public function detroyAll(){
         Portfolio::truncate();

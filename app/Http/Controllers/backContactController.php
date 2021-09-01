@@ -32,7 +32,7 @@ class backContactController extends Controller
         $contact->email = $rq->email;
         $contact->phone_number = $rq->phone_number;
         $contact->save();
-        return redirect(route('backContact'));
+        return redirect(route('showContact', $contact->id));
     }
 
 

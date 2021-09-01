@@ -21,9 +21,9 @@
     @csrf
     @method('PUT')
     
-    Adresse: <input type="text" value="{{old('adresse')}}" name="adresse">
-    email: <input type="text" value="{{old('email')}}" name="email">
-    Numéro de téléphone: <input type="text" value="{{old('phone')}}" name="phone">
+    Adresse: <input type="text" value="{{$contact->info}}" name="adresse">
+    email: <input type="text" value="{{$contact->email}}" name="email">
+    Numéro de téléphone: <input type="text" value="{{$contact->phone_number}}" name="phone">
     
     <button class="btn btn-warning text-light">Submit</button>
     </form>   

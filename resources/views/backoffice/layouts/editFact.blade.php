@@ -21,9 +21,9 @@
     @csrf
     @method('PUT')
     
-    Valeurs: <input type="text" value="{{old('valeur')}}" name="valeur">
-    Titre: <input type="text" value="{{old('title')}}" name="title">
-    description: <input type="text" value="{{old('description')}}" name="description">
+    Valeurs: <input type="text" value="{{$fact->span}}" name="valeur">
+    Titre: <input type="text" value="{{$fact->p_strong}}" name="title">
+    description: <input type="text" value="{{$fact->p}}" name="description">
     
     <button class="btn btn-warning text-light">Submit</button>
     </form>   

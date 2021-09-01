@@ -12,8 +12,8 @@
     @csrf
     @method('PUT')
     
-    Domaines: <input type="text" value="{{old('tech')}}" name="tech">
-    Valeur: <input type="text" value="{{old('val')}}" name="val">
+    Domaines: <input type="text" value="{{$skill->tech}}" name="tech">
+    Valeur: <input type="text" value="{{$skill->val}}" name="val">
     
     <button class="btn btn-warning text-light">Submit</button>
     </form>   

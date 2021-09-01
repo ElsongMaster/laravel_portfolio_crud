@@ -12,9 +12,8 @@
         <h2>Services</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       </div>
-      <div class="container d-flex justify-content-center w-100 border border-danger">
 
-        <div class="row">
+        <div class="row d-flex justify-content-center ">
             @foreach ($services as $data)
                 
             <div class="col-lg-4 col-md-6 icon-box border border-secondary m-3" data-aos="fade-up">
@@ -29,7 +28,6 @@
             @endforeach
   
         </div>
-      </div>
 
     </div>
   </section><!-- End Services Section -->

@@ -11,23 +11,27 @@ class backAboutController extends Controller
         return view('backoffice.backPages.about',compact('abouts'));
     }
 
+    
+    
+    public function show(About $id){
+        $personne  = $id;
+        return view('backoffice.layouts.showAbout',compact('personne'));
+    }
     public function edit(About $id){
         $personne  = $id;
         return view('backoffice.layouts.editAbout',compact('personne'));
     }
 
-    
-
     public function update(About $id,Request $rq){
-                               request()->validate([
-                                   "birthday"=>["required","min:1","max:100"],
-                                   "phone"=>["required"],
-                                   "city"=>["required"],
-                                   "age"=>["required","numeric"],
-                                   "email"=>["required"],
-                                   "freelance"=>["required"],
+        request()->validate([
+            "birthday"=>["required","min:1","max:100"],
+            "phone"=>["required"],
+            "city"=>["required"],
+            "age"=>["required","numeric"],
+            "email"=>["required"],
+            "freelance"=>["required"],
 
-                            ]);
+    ]);
         $personne  = $id;
         $personne->h3 = $rq->h3;
         $personne->p2 = $rq->p2;
@@ -43,7 +47,7 @@ class backAboutController extends Controller
         $personne->p3 = $rq->p3;
 
         $personne->save();
-        return view('backoffice.layouts.editAbout',compact('personne'));
+        return redirect(route('showAbout',$personne->id));
     }
 
 

@@ -21,8 +21,8 @@
     @csrf
     @method('PUT')
     
-    Titre: <input type="text" value="{{old('title')}}" name="title">
-    Description: <input type="text" value="{{old('description')}}" name="description">
+    Titre: <input type="text" value="{{$service->title}}" name="title">
+    Description: <input type="text" value="{{$service->description}}" name="description">
     
     <button class="btn btn-warning text-light">Submit</button>
     </form>   

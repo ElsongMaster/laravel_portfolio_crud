@@ -18,7 +18,9 @@ class indexController extends Controller
         $portfolios = Portfolio::all();
         $services = Service::all();
         $skills = Skill::all();
+        $skillTab = new Skill();
+        $count = $skillTab->count();
         $tabDatas = [$abouts,$contacts,$facts,$portfolios,$services,$skills];
-        return view('pages.index',compact('abouts','contacts','facts','portfolios','services','skills','tabDatas'));
+        return view('pages.index',compact('abouts','contacts','facts','portfolios','services','skills','count'));
     }
 }

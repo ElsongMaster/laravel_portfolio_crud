@@ -24,18 +24,21 @@ class backServicesController extends Controller
 
 
     public function update(Service $id, Request $rq){
-        $personne  = $id;
-        $personne->info = $rq->info;
-        $personne->email = $rq->email;
-        $personne->phone_number = $rq->phone_number;
-        $personne->save();
-        return redirect(route('backServices'));
+                request()->validate([
+            "title"=>["required","min:1","max:100"],
+            "description"=>["required","min:1","max:200"],
+        ]);
+        $service  = $id;
+        $service->title = $rq->title;
+        $service->description = $rq->description;
+        $service->save();
+        return redirect(route('showService',$service->id));
     }
 
 
     public function destroy(Service $id){
-        $id->delete;
-        return redirect()->back();
+        $id->delete();
+        return redirect(route('backServices'));
     }
     
     public function detroyAll(){

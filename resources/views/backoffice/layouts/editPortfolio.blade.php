@@ -21,7 +21,7 @@
     @csrf
     @method('PUT')
     
-    linkImg: <input type="text" value="{{old('img')}}" name="img">
+    linkImg: <input type="text" value="{{$project->img}}" name="img">
     
     <button class="btn btn-warning text-light">Submit</button>
     </form>   

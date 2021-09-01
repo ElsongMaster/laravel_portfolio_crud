@@ -26,22 +26,21 @@ class backFactsController extends Controller
             "span"=>["required","numeric"],
             "icon"=>["required","min:1","max:40"],
             "p_strong"=>["required","min:1","max:40"],
-            "p_strong"=>["required","min:1","max:40"],
+            "p"=>["required","min:1","max:40"],
         ]);
         $fact  = $id;
         $fact->span = $rq->span;
         $fact->icon = $rq->icon;
         $fact->p_strong = $rq->p_strong;
         $fact->p = $rq->p;
-        $fact->delay = $rq->delay;
         $fact->save();
-        return redirect(route('backFact'));
+        return redirect(route('showFact',$fact->id));
     }
 
 
     public function destroy(Fact $id){
-        $id->delete;
-        return redirect()->back();
+        $id->delete();
+        return redirect(route('backFacts'));
     }
 
 

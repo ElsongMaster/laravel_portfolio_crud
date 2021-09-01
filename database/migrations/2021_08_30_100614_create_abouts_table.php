@@ -20,11 +20,11 @@ class CreateAboutsTable extends Migration
             $table->text('p2');
             $table->string('img');
             $table->string('birthday');
-            $table->string('website');
+            $table->string('website')->nullable();
             $table->string('phone');
             $table->string('city');
             $table->integer('age');
-            $table->string('degree');          
+            $table->string('degree')->nullable();          
             $table->string('email');           
             $table->string('freelance');
             $table->text('p3');

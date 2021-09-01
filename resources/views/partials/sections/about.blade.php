@@ -22,18 +22,18 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> {{$data->ul1_li1}}</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> {{$data->ul1_li2}}</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> {{$data->ul1_li3}}</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> {{$data->ul1_li4}}</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> {{$data->birthday}}</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> {{$data->website}}</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> {{$data->phone}}</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> {{$data->city}}</li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> {{$data->ul2_li1}}</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> {{$data->ul2_li2}}</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>PhEmailone:</strong> {{$data->ul2_li3}}</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> {{$data->ul2_li4}}</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> {{$data->age}}</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> {{$data->degree}}</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>PhEmailone:</strong> {{$data->email}}</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> {{$data->freelance}}</li>
                 </ul>
               </div>
             </div>
